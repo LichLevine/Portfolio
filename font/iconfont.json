@@ -1,0 +1,107 @@
+{
+  "id": "2433790",
+  "name": "skill course",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4075973",
+      "name": "电子技术",
+      "font_class": "dianzijishu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4838221",
+      "name": "电子信息",
+      "font_class": "dianzixinxi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "5093356",
+      "name": "网络",
+      "font_class": "wangluo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "5158704",
+      "name": "电子",
+      "font_class": "dianzi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "5722344",
+      "name": "电子",
+      "font_class": "dianzi1",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "5734952",
+      "name": "电子学-54",
+      "font_class": "dianzixue-",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "5734962",
+      "name": "电子学-64",
+      "font_class": "dianzixue-1",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "5735038",
+      "name": "电子学-140",
+      "font_class": "dianzixue-2",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "8153875",
+      "name": "电子学",
+      "font_class": "electronics",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "9557786",
+      "name": "电子",
+      "font_class": "dianzi2",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "9982159",
+      "name": "信号",
+      "font_class": "xinhao",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13592683",
+      "name": "fpga",
+      "font_class": "fpga",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    },
+    {
+      "icon_id": "18164623",
+      "name": "大数据,数据结构,关系,关系分析,共同联系人,组织",
+      "font_class": "people-network-full",
+      "unicode": "e865",
+      "unicode_decimal": 59493
+    },
+    {
+      "icon_id": "19525501",
+      "name": "电子指引标-线",
+      "font_class": "dianzizhiyinbiao-xian",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+    <meta name="keywords" content="Portfolio" />
+    <meta name="description" content="Wenli Liang's Portfolio" />
+    <meta name="author" content="Wenli Liang" />
+    <!--<meta http-equiv="refresh" content="30" />-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="basepro2.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="font/demo.css" />
+    <title>Monitor</title>
+    <style>
+        body{
+            background-color:whitesmoke;
+        }
+        .nav {
+            bottom: 220px;
+        }
+        .back-botton a{
+            font-family:仿宋;
+            font-size:30px;
+            text-decoration:none;
+            margin:0 13px;
+        }
+        .back-botton a:hover{
+            color:#ffd800;
+        }
+        .monitor{
+            width:100%;
+        }
+        .monitor h1{
+            width:80%;
+            text-align:center;
+            font-family:黑体;
+            font-size:32px;
+            margin:0 auto;
+            padding-top:70px;
+        }
+        .monitor-wrapper{
+            background-color:rgba(128,128,128,0.3);
+            width:88%;
+            line-height:normal;
+            text-align:center;
+            margin:20px auto;
+            font-size:20px;
+        }
+        .monitor-mv{
+            position:relative;
+            left:10%;
+            width:100%;
+            margin:0 auto;
+        }
+        .monitor-intro{
+            width:80%;
+            margin:0 auto;
+        }
+        .monitor-intro h2{
+            font-family:黑体;
+            font-size:30px;
+            margin-top:70px;
+            text-align:center;
+        }
+        .monitor-intro h3{
+            font-family:宋体;
+            font-size:20px;
+            margin-top:20px;
+            margin-bottom:30px;
+        }
+        .monitor-intro hr {
+            width: 60%;
+            background-color:silver;
+          
+        }
+        .monitor-intro video{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .monitor-intro img{
+            margin:0 auto;
+            transition-duration:1s;
+        }
+        .monitor-intro img:hover{
+            transform:scale(1.2);
+        }
+        .foot {
+            width: 100%;
+            height: 180px;
+            background-color: #101010;
+        }
+
+        .foot h1 {
+            position: relative;
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            font-size: 20px;
+            padding-top: 30px
+        }
+
+        .foot h2 {
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            margin-top: 10px;
+        }
+
+        .foot h3{
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            margin-top: 20px;
+        }
+        @media {
+            @media(min-width:768px) {
+                .monitor-intro img {
+                    width:49%;
+                }
+                #conduct{
+                    width: 100%;
+                }
+                .monitor h1{
+                    text-align:center;
+                }
+                .monitor-intro h2, h3 {
+                    text-align: center;
+                    width: 60%;
+                    text-align: center;
+                    position: relative;
+                    left: 20%;
+                }
+                .back-botton a {
+                    font-family: 仿宋;
+                    font-size: 30px;
+                    text-decoration: none;
+                    margin: 0 65px;
+                }
+            }
+            @media(min-width:1080px){
+                .monitor h1 {
+                    font-size:45px;
+                }
+                .monitor-wrapper {
+                    font-size:28px;
+                }
+                .monitor-intro h2{
+                    font-size:32px;
+                }
+                .monitor-intro h3 {
+                    font-size:28px;
+                    width:60%;
+                    text-align:center;  
+                    position:relative;
+                    left:20%;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="left-menu">
+            <ul class="menu-icon">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <ul class="nav">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about me2.html">about me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="实习简历.pdf">Resume</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="back-botton">
+            <a href="about me2.html" target="_self"><i class="fas fa-angle-left"></i></a>
+            <a href="intelligent car.html" target="_self"><i class="fas fa-car"></i>智能小车</a>
+            <a href="intelligent air conditioner.html" target="_self"><i class="fas fa-snowflake"></i>智能空调概念</a>
+        </div>
+        <div class="monitor">
+            <h1> 基于STM32单片机对婴儿睡姿识别的人工智能监护器</h1>
+            <div class="monitor-wrapper">
+                <span>一款能够随时建立图像数据库，实现智能自动化对婴儿睡姿实时识别并及时报警的监护器。</span>
+            </div>
+            <div class="monitor-mv">
+                <video src="monitor/project1.mp4" width="80%" controls></video>
+            </div>
+            <div class="monitor-intro">
+                <h2>作品简述</h2>
+                <hr />
+                <h3>基于C、Python编程语言，以STM32单片机和OpenMV为硬件基础，结合物联网技术和MQTT协议，利用阿里云云端平台开发该人工智能监护器，实现智能自动化对婴儿睡姿实时识别并利用云智能APP报警的功能，获得华南农业大学2020年“丁颖杯”创意发明大赛二等奖。 </h3>
+                <img src="monitor/projectphoto2.jpg" width="100%" />
+                <img src="monitor/projectphoto3.png" width="100%" />
+                <h2>设计概念</h2>
+                <hr />
+                <h3>
+                    根据《美国儿科学会》的数据显示，大约有1/2000的婴儿在2-4个月的时候，在睡眠过程中由于睡姿不当或有衣物挡住口鼻呼吸而发生窒息死亡的意外。针对婴儿在睡眠中出现窒息死亡的现象，该作品设计具有智能识别婴儿睡姿、场景内报警、远程报警的功能，从而做到减轻父母的劳动强度。
+                </h3>
+                <h2>组成介绍</h2>
+                <hr />
+                <h3>整个作品设计思路如图所示，一共有四个部分组成，两两之间进行数据交互，通过这样的形式，形成一个完全闭合的数据交互通信系统。</h3>
+                <img id="conduct" src="monitor/projectphoto4.png" width="100%" />
+                <h2>云平台情况</h2>
+                <hr />
+                <h3>作品通电之后，STM32单片机自动运行接入设计好的WiFi程序并接入到阿里云服务器。产品在工作时，也能通过云平台检测到实时的动作行为。</h3>
+                <video src="monitor/projectmv.mp4" width="80%" controls></video>
+                <video src="monitor/projectmv2.mp4" width="80%" controls></video>
+                <img src="monitor/aliyun1.png" width="100%" />
+                <img src="monitor/aliyun2.png" width="100%" />
+                <img src="monitor/aliyun3.png" width="100%" />
+                <img src="monitor/aliyun4.png" width="100%" />
+                <h2>动作行为</h2>
+                <hr />
+                <h3>通过手机可操作产品建立数据库以及识别动作，以下是软件截图。</h3>
+                <img src="monitor/shuju1.png" width="100%" />
+                <img src="monitor/shuju2.png" width="100%" />
+                <img src="monitor/shuju3.png" width="100%" />
+                <img src="monitor/shuju4.png" width="100%" />
+                <img src="monitor/shibie1.png" width="100%" />
+                <img src="monitor/shibie2.png" width="100%" />
+                <img src="monitor/shibie3.png" width="100%" />
+                <img src="monitor/shibie4.png" width="100%" />
+                <h2>实物展示</h2>
+                <hr />
+                <h3>接下来是实物展示部分，视频经剪辑后约一分半钟时长。</h3>
+                <video src="monitor/projectshow.mp4" width="80%" controls></video>
+            </div>
+        </div>
+    </main>
+    <div class="foot">
+        <h1>Wenli Liang 2021</h1>
+        <br />
+        <h2>华南农业大学 本科生</h2>
+        <h2>电子信息工程（2018~2022）</h2>
+        <h3>
+            All photos and videos on this page taken by Wenli Liang
+        </h3>
+    </div>
+</body>
+</html>

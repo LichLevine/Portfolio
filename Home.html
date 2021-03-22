@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <meta name="keywords" content="Portfolio" />
+    <meta name="description" content="Wenli Liang's Portfolio" />
+    <meta name="author" content="Wenli Liang" />
+    <!--<meta http-equiv="refresh" content="30" />-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="base.css" />
+    <title>Wenli Liang's Portfolio</title>
+    <style>
+        /*设置响应式布局*/
+        @media all{
+            @media(max-width:910px) 
+            {
+                .photo .intro{
+                    width:60%;
+                    height:75%;
+                }
+            }
+        }
+        /*设置背景图片*/
+        .photo {
+            width: 100%;
+            height: 100%;
+            background-image: url(005.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px auto;
+        }
+        /*个人简述框架*/
+        .intro {
+            width: 60%;
+            height: 60%;
+            margin: 150px auto;
+            background-color: rgba( 139,0,139,0.3);
+            box-shadow: 6px 6px 8px;
+            overflow: visible;
+        }
+        /*个人简述图片*/
+        .intro-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background-image: url(head.png);
+            background-size: cover;
+            position: relative;
+            top: 40px;
+            margin: 0 auto;
+            opacity: 0.9;
+            border: 4px double pink;
+            box-shadow: 1px 1px 5px;
+            transition-duration: 1.5s;
+        }
+
+            .intro-photo:hover {
+                transform: scale(1.3);
+            }
+        /*个人简述内容*/
+        h1 {
+            font-family: 楷体;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            color: GreenYellow;
+            position: relative;
+            top: 100px;
+            padding-bottom: 40px;
+            transition-duration: 2s;
+        }
+
+        h1:hover {
+           transform: scale(1.3);
+           color: DeepPink;
+        }
+
+        h2 {
+            font-family: 楷体;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            color: GreenYellow;
+            position: relative;
+            top: 100px;
+            transition-duration: 2s;
+        }
+
+        h2:hover {
+            transform: scale(1.3);
+            color: DarkMagenta;
+        }
+
+        h3 {
+            font-family:'Tempus Sans ITC';
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            color: gold;
+            position: relative;
+            top: 150px;
+            transition-duration: 2s;
+        }
+
+        h3:hover {
+            transform: scale(1.3);
+            color: Indigo;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="box-top">
+            <div class="photo">
+                <div class="top-bar">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">Home</a>
+                        </li>
+                        <li>
+                            <a href="about me2.html">About me</a>
+                        </li>
+                        <li>
+                            <a href="实习简历.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="intro">
+                    <div class="intro-photo"></div>
+                    <h1>
+                        我是梁文立
+                    </h1>
+                    <h2>
+                        欢迎来到我的个人网站
+                    </h2>
+                    <h3>
+                        Welcome To My Portfolio
+                    </h3>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+</body>
+</html>
+

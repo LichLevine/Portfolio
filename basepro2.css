@@ -1,0 +1,544 @@
+﻿body {
+    width: 100%;
+    margin: auto;
+}
+/*顶部导航条*/
+.topbar {
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    background: linear-gradient(0.25turn, #534d4d,silver,#391414 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*顶部左侧导航图标*/
+.left-menu:hover~.nav,.nav:hover{
+    display:block;
+}
+.menu-icon{
+    width:50px;
+    height:65px;
+}
+.menu-icon li{
+    width:50px;
+    height:5px;
+    background-color:#cf9898;
+    position:absolute;
+}
+.menu-icon li:nth-child(1){
+    top:15px;
+}
+.menu-icon li:nth-child(2) {
+    top:30px;
+}
+.menu-icon li:nth-child(3) {
+    top:45px;
+}
+/*下拉条设置*/
+.nav {
+    display:none;
+    position: absolute;
+    width:100%;
+    top: 65px;
+    left:0;
+    bottom:170px;
+    right:0;
+    background-color:#534d4d;
+    opacity:0.8;
+    z-index:2;
+}
+.nav li{
+    width:80%;
+    margin:0 auto;
+}
+.nav a{
+    text-decoration:none;
+    line-height:65px;
+    font-family: 'Tempus Sans ITC';
+    font-size:50px;
+    color:blueviolet;
+    display:block;
+    margin:10px 0;
+}
+.nav a:hover {
+    color: #fffa00
+}
+.nav a:active {
+    color: #000000
+}
+/*图片及自我介绍*/
+
+
+/*设置媒体查询，顶部导航条宽度大于768像素时改变*/
+@media all{
+    @media(min-width:768px){
+        /*顶部导航条切换*/
+        .menu-icon {
+            display: none;
+        }
+        .nav {
+            position: static;
+            display: flex;
+            background: linear-gradient(0.25turn, #534d4d,silver,#391414 );
+        }
+        .nav:hover{
+            display:contents;
+        }
+        .nav a {
+            margin: 0;
+        }
+        .nav li{
+            width:auto;
+        }      
+    }
+}
+
+/*图片以及自我介绍部分*/
+.beach-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.beach {
+    margin: 5px 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 5px 10px silver;
+    z-index: 1;
+}
+
+.self-wrapper {
+    position: relative;
+    width: 100%;
+    height: 3%;
+    top: 0%;
+    background-color: gray;
+    margin: 10px 0;
+}
+
+.self-intro {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    background-color: rgba(0, 255, 255, .2);
+}
+
+.self-intro li {
+    position: relative;
+    font-family: 等线;
+    font-size: 30px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+/*设置图片自我介绍媒体查询，顶部导航条宽度大于768像素时改变*/
+@media {
+    @media(min-width:768px) {
+        /*图片和自我介绍部分*/
+        .beach-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            margin: 0 auto;
+        }
+
+        .beach {
+            position: relative;
+            left: 10%;
+            top: 10%;
+            width: 40%;
+            float: left;
+        }
+
+        .self-wrapper {
+            position: relative;
+            left: 30%;
+            top: 30%;
+            width: 60%;
+            height: 3%;
+            background-color: gray;
+        }
+
+        .self-intro {
+            float: left;
+            position: relative;
+            top: 30%;
+            left: 10%;
+            width: 40%;
+            height: auto;
+            text-align: center;
+            background-color: white;
+            box-shadow: 3px 3px 5px silver;
+        }
+
+            .self-intro li {
+                font-size: 2em;
+                position: relative;
+                background-color:#a8e5f0;
+                margin: 0px 0px;
+                padding: 10px 0px;
+            }
+    }
+}
+
+/*设置专业方面*/
+.major{
+    position:absolute;
+    top:170%;
+    width:100%;
+    height:700px;
+    background-color:#303030;
+}
+.major h1{
+    text-align:center;
+    font-family:宋体;
+    color:aqua;
+    font-size:50px;
+    margin:50px 0;
+}
+.major hr{
+    width:80%;
+    height:2px;
+    background-color:aquamarine;
+}
+.hr1{
+    width:80%;
+    background-color:aquamarine;
+}
+.major h2{
+    text-align:center;
+    font-family:宋体;
+    color:ghostwhite;
+    font-size:30px;
+    margin-top:50px;
+    margin-bottom:25px;
+}
+.major h3{
+    text-align:center;
+    font-family:仿宋;
+    color:ghostwhite;
+    font-size:20px;
+    margin-bottom:50px;
+    margin:0 40px;
+}
+.major h4 {
+    text-align: center;
+    font-family: 宋体;
+    color: ghostwhite;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.major h5 {
+    text-align: center;
+    font-family: 仿宋;
+    color: ghostwhite;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin: 0 40px;
+}
+
+
+/*设置专业方面媒体查询*/
+@media {
+    @media(min-width:768px) {
+        .major {
+            top: 100%;
+            height: 600px;
+        }
+
+        .major h1 {
+            position: relative;
+            top: 7%;
+        }
+
+        .major hr {
+            position: relative;
+            top: 7%;
+        }
+
+        .EE {
+            position: relative;
+            width: 50%;
+            height: 60%;
+            top: 7%;
+            float: left;
+        }
+
+        .SE {
+            position: relative;
+            width: 50%;
+            height: 60%;
+            top: 7%;
+            float: right;
+        }
+
+        .major h3 {
+            font-size: 25px;
+        }
+
+        .major h5 {
+            font-size: 25px;
+        }
+    }
+}
+
+/*设置专业知识及技能*/
+.skill {
+    position: absolute;
+    top: 285%;
+    width: 100%;
+    height: 1100px;
+    background-color: white;
+}
+
+.skill h1 {
+    text-align: center;
+    font-family: 宋体;
+    color: #4a4141;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.skill hr {
+    width: 80%;
+    height: 2px;
+    background-color: dimgrey;
+}
+
+.skill i {
+    font-size: 28px !important;
+}
+
+.skill h2 {
+    text-align: center;
+    font-family: 宋体;
+    color: #746161;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.skill li {
+    text-align: center;
+    font-family: 仿宋;
+    color: #746161;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin: 20px 40px;
+}
+/*设置技能方面媒体查询*/
+@media {
+    @media(min-width:768px) {
+        .skill {
+            top: 215%;
+            transition-duration: .5s;
+            height:auto;
+        }
+
+        .skillEE {
+            position: relative;
+            width: 55%;
+            height: 60%;
+            top: 7%;
+            float: left;
+        }
+
+            .skillEE li {
+                text-align: center;
+            }
+
+        .skillSE {
+            position: relative;
+            width: 45%;
+            height: 60%;
+            top: 5.5%;
+            float: right;
+        }
+    }
+}
+
+/*项目经历*/
+.project {
+    position: absolute;
+    top: 460%;
+    width: 100%;
+    height: 1200px;
+    background-color: #303030;
+}
+
+.project h1 {
+    text-align: center;
+    font-family: 宋体;
+    color: snow;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.project hr {
+    width: 80%;
+    height: 2px;
+    background-color: whitesmoke;
+}
+
+.project h2 {
+    position: relative;
+    right: 10%;
+    text-align: center;
+    font-family: 宋体;
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 10px;
+    margin: 20px;
+}
+
+.project1 {
+    position: relative;
+    left: 10%;
+    margin: 50px 0;
+}
+
+.project2 {
+    position: relative;
+    left: 10%;
+    margin: 50px 0;
+}
+
+.project3 {
+    position: relative;
+    left: 10%;
+    margin: 50px 0;
+}
+.project a img{
+    transition-duration:2s;
+    
+}
+.project a img:hover{
+    transform:scale(1.2)
+}
+/*设置项目经历响应式布局*/
+@media {
+    @media(min-width:520px) {
+        .project {
+            height: 1300px;
+        }
+    }
+
+    @media(min-width:560px) {
+        .project {
+            height: 1400px;
+        }
+    }
+
+    @media(min-width:600px) {
+        .project {
+            height: 1500px;
+        }
+    }
+
+    @media(min-width:640px) {
+        .project {
+            height: 1600px;
+        }
+    }
+
+    @media(min-width:768px) {
+        .project {
+            top: 360%;
+            height: 90%;
+        }
+
+        .project1, .project2, .project3 {
+            width: 28.5%;
+            float: left;
+        }
+    }
+
+    @media(min-width:970px) {
+        .project {
+            top: 330%;
+        }
+    }
+}
+
+/*设置页脚*/
+footer {
+    position: absolute;
+    top: 645%;
+    width: 100%;
+    height: 40%;
+    background-color: #101010;
+}
+
+footer h1 {
+    font-family: 宋体;
+    text-align: center;
+    color: #8090fb;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    font-family: 宋体;
+    text-align: center;
+    color: #8090fb;
+    margin-top: 10px;
+}
+
+footer h3 {
+    font-family: 宋体;
+    text-align: center;
+    color: #8090fb;
+    margin-top: 20px;
+}
+
+/*设置页脚的响应式布局*/
+@media {
+    @media(min-width:460px) {
+        footer {
+            top: 715%;
+            transition-duration: 1s;
+        }
+    }
+    @media(min-width:518px) {
+        footer {
+            top: 730%;
+            transition-duration: 1s;
+        }
+    }
+    @media(min-width:560px) {
+        footer {
+            top: 745%;
+            transition-duration: 1s;
+        }
+    }
+    @media(min-width:600px) {
+        footer {
+            top: 760%;
+            transition-duration: 1s;
+        }
+    }
+    @media(min-width:650px) {
+        footer {
+            top: 775%;
+            transition-duration: 1s;
+        }
+    }
+    @media(min-width:768px) {
+        footer {
+            top: 450%;
+            transition-duration: .1s;
+        }
+    }
+    @media(min-width:960px) {
+        footer {
+            top: 420%;
+            transition-duration: .1s;
+        }
+    }
+}

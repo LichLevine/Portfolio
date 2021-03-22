@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+    <meta name="keywords" content="Portfolio" />
+    <meta name="description" content="Wenli Liang's Portfolio" />
+    <meta name="author" content="Wenli Liang" />
+    <!--<meta http-equiv="refresh" content="30" />-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="basepro2.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="font/demo.css" />
+    <title>Intelligent Car</title>
+    <style>
+        body {
+            background-color:snow;
+        }
+        .nav {
+            bottom: 220px;
+        }
+        .back-botton a {
+            font-family: 仿宋;
+            font-size: 30px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .back-botton a:hover {
+            color: #ffd800;
+        }
+        .car {
+            width: 100%;
+        }
+
+        .car h1 {
+            width: 80%;
+            text-align: center;
+            font-family: 黑体;
+            font-size: 32px;
+            margin: 0 auto;
+            padding-top: 70px;
+        }
+
+        .car-wrapper {
+            background-color: rgba(128,128,128,0.3);
+            width: 88%;
+            line-height: normal;
+            text-align: center;
+            margin: 20px auto;
+            font-size: 20px;
+        }
+        .car-mv {
+            position: relative;
+            left: 10%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .car img {
+            margin: 0 auto;
+            transition-duration: 1s;
+        }
+
+        .car img:hover {
+            transform: scale(1.2);
+        }
+        .car-intro{
+            width:80%;
+            margin:0 auto;
+        }
+        .car-intro h2{
+            font-family:黑体;
+            font-size:30px;
+            margin-top:70px;
+            text-align:center;
+        }
+        .car-intro h3{
+            font-family:宋体;
+            font-size:20px;
+            margin-top:20px;
+            margin-bottom:30px;
+        }
+        .car-intro hr {
+            width: 60%;
+            background-color:silver;
+          
+        }
+        .car-intro video{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .car-intro img{
+            margin:0 auto;
+            transition-duration:1s;
+        }
+        .car-intro img:hover{
+            transform:scale(1.2);
+        }
+        .foot {
+            width: 100%;
+            height: 180px;
+            background-color: #101010;
+        }
+
+        .foot h1 {
+            position: relative;
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            font-size: 20px;
+            padding-top: 30px
+        }
+
+        .foot h2 {
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            margin-top: 10px;
+        }
+
+        .foot h3{
+            font-family: 宋体;
+            text-align: center;
+            color: #8090fb;
+            margin-top: 20px;
+        }
+        @media {
+            @media(min-width:768px) {
+                .car img {
+                    width:80%;
+                }
+                .car h1 {
+                    text-align: center;
+                }
+                .car-intro img{
+                    width:100%;
+                }
+                .car-intro h2, h3 {
+                    text-align: center;
+                    width: 60%;
+                    text-align: center;
+                    position: relative;
+                    left: 20%;
+                }
+
+                .back-botton a {
+                    font-family: 仿宋;
+                    font-size: 30px;
+                    text-decoration: none;
+                    margin: 0 65px;
+                }
+            }
+
+            @media(min-width:1080px) {
+                .car h1 {
+                    font-size: 45px;
+                }
+                .car-wrapper {
+                    font-size: 28px;
+                }
+
+                .car-intro h2 {
+                    font-size: 32px;
+                }
+
+                .car-intro h3 {
+                    font-size: 28px;
+                    width: 65%;
+                    text-align: center;
+                    position: relative;
+                    left: 20%;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="left-menu">
+            <ul class="menu-icon">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <ul class="nav">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about me2.html">about me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="实习简历.pdf">Resume</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="back-botton">
+            <a href="about me2.html" target="_self"><i class="fas fa-angle-left"></i></a>
+            <a href="monitor.html" target="_self"><i class="fas fa-camera"></i>智能监护器</a>
+            <a href="intelligent air conditioner.html" target="_self"><i class="fas fa-snowflake"></i>智能空调概念</a>
+        </div>
+        <div class="car">
+            <h1>基于51单片机的智能小车</h1>
+            <div class="car-wrapper">
+                <span>一款能够自动寻迹、避障的智能小车</span>
+            </div>
+            <div class="car-mv">
+                <img src="car/photo.jpg" width="80%" />
+            </div>
+            <div class="car-intro">
+                <h2>作品简述</h2>
+                <hr />
+                <h3>基于C编程语言，以51单片机为硬件基础，结合红外线传感器元件，实现小车移动时能够寻迹、避障的功能。</h3>
+                <img class="conduct" src="car/car.jpg" width="100%" />
+                <h2>寻迹展示</h2>
+                <hr />
+                <h3>在智能小车初赛中顺利完成寻迹路线，成功出线。但由于课程冲突问题，没能参加决赛，留下遗憾。（队友拍摄时非常紧张，因此视频比较抖）</h3>
+                <video src="car/xunji.mp4" width="100%" controls></video>
+                <h2>避障展示</h2>
+                <hr />
+                <h3>在比赛之余，利用现有的元件尝试做出避障的功能，效果与元件精度成正相关关系，但依然能够实现。（建议全屏观看）</h3>
+                <video src="car/bizhang.mp4" width="80%" controls></video>
+            </div>
+        </div>
+    </main>
+    <div class="foot">
+        <h1>Wenli Liang 2021</h1>
+        <br />
+        <h2>华南农业大学 本科生</h2>
+        <h2>电子信息工程（2018~2022）</h2>
+        <h3>
+            All photos and videos on this page taken by Wenli Liang
+        </h3>
+    </div>
+</body>
+</html>
