@@ -1,7 +1,7 @@
 ﻿/*向服务器导入字体供给用户下载*/
 @font-face {
     font-family: 'myfont';
-    src: url(ITCEDSCR.ttf,STXINGKA.ttf)；
+    src: url(TempusSansITC.otf,华文行楷.ttf,simsun.ttc,simkai.ttf)；
 }
 /*设置顶部框架*/
 .box-top {

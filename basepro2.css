@@ -130,7 +130,7 @@
 
 .self-intro li {
     position: relative;
-    font-family: 等线;
+    font-family: SimSun;
     font-size: 30px;
     margin: 10px 0px;
     padding: 10px 0px;
@@ -175,13 +175,13 @@
             box-shadow: 3px 3px 5px silver;
         }
 
-            .self-intro li {
-                font-size: 2em;
-                position: relative;
-                background-color:#a8e5f0;
-                margin: 0px 0px;
-                padding: 10px 0px;
-            }
+        .self-intro li {
+            font-size: 2em;
+            position: relative;
+            background-color:#a8e5f0;
+            margin: 0px 0px;
+            padding: 10px 0px;
+        }
     }
 }
 
@@ -195,7 +195,7 @@
 }
 .major h1{
     text-align:center;
-    font-family:宋体;
+    font-family:SimSun;
     color:aqua;
     font-size:50px;
     margin:50px 0;
@@ -211,7 +211,7 @@
 }
 .major h2{
     text-align:center;
-    font-family:宋体;
+    font-family:SimSun;
     color:ghostwhite;
     font-size:30px;
     margin-top:50px;
@@ -219,7 +219,7 @@
 }
 .major h3{
     text-align:center;
-    font-family:仿宋;
+    font-family:SimSun;
     color:ghostwhite;
     font-size:20px;
     margin-bottom:50px;
@@ -227,7 +227,7 @@
 }
 .major h4 {
     text-align: center;
-    font-family: 宋体;
+    font-family: SimSun;
     color: ghostwhite;
     font-size: 30px;
     margin-top: 50px;
@@ -236,7 +236,7 @@
 
 .major h5 {
     text-align: center;
-    font-family: 仿宋;
+    font-family: SimSun;
     color: ghostwhite;
     font-size: 20px;
     margin-bottom: 50px;
@@ -299,7 +299,7 @@
 
 .skill h1 {
     text-align: center;
-    font-family: 宋体;
+    font-family: SimSun;
     color: #4a4141;
     font-size: 50px;
     margin: 50px 0;
@@ -317,7 +317,7 @@
 
 .skill h2 {
     text-align: center;
-    font-family: 宋体;
+    font-family: SimSun;
     color: #746161;
     font-size: 40px;
     margin-top: 50px;
@@ -326,7 +326,7 @@
 
 .skill li {
     text-align: center;
-    font-family: 仿宋;
+    font-family: SimSun;
     color: #746161;
     font-size: 30px;
     margin-bottom: 50px;
@@ -374,7 +374,7 @@
 
 .project h1 {
     text-align: center;
-    font-family: 宋体;
+    font-family: SimSun;
     color: snow;
     font-size: 50px;
     margin: 50px 0;
@@ -390,7 +390,7 @@
     position: relative;
     right: 10%;
     text-align: center;
-    font-family: 宋体;
+    font-family: SimSun;
     color: whitesmoke;
     font-size: 25px;
     margin-top: 10px;
@@ -476,7 +476,7 @@ footer {
 }
 
 footer h1 {
-    font-family: 宋体;
+    font-family: SimSun;
     text-align: center;
     color: #8090fb;
     font-size: 20px;
@@ -484,14 +484,14 @@ footer h1 {
 }
 
 footer h2 {
-    font-family: 宋体;
+    font-family: SimSun;
     text-align: center;
     color: #8090fb;
     margin-top: 10px;
 }
 
 footer h3 {
-    font-family: 宋体;
+    font-family: SimSun;
     text-align: center;
     color: #8090fb;
     margin-top: 20px;
